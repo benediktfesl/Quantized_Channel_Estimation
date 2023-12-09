@@ -95,6 +95,7 @@ if __name__ == "__main__":
     params['model_type'] = '3gpp'
     params['n_path'] = n_path
     path_sigma = 2.0
+    os.makedirs(f'results/saves/', exist_ok=True)
     file_name_3gpp = 'results/saves/saved_data_ant=' + str(n_antennas) + '_model=' + str(params['model_type']) + \
                      '_paths=' + str(params['n_path']) + '_ntrain=' + str(n_train_ch) + '_nchan=' + \
                      str(n_channels) + '.npy'
@@ -145,6 +146,7 @@ if __name__ == "__main__":
     params['quantizer'] = quantizer
 
     # initialize VAE estimator
+    os.makedirs(f'results/vae/saves', exist_ok=True)
     vae_est = VAE_nbit(params=params)
 
     # train VAE
@@ -162,6 +164,7 @@ if __name__ == "__main__":
 
     mse_list = [list(i) for i in zip(*mse_list)]
     print(mse_list)
+    os.makedirs(f'results/vae/', exist_ok=True)
     file_name = f'./results/vae/{date_time}_vae{vae_mode}_{params["model_type"]}_path={params["n_paths"]}_ant=' \
                 f'{n_antennas}_bits={n_bits}_train={n_train_ch}_pilot={n_pilots}_qtype={quantizer_type}.csv'
     with open(file_name, 'w') as myfile:

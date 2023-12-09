@@ -79,6 +79,7 @@ if __name__ == "__main__":
     params['model_type'] = '3gpp'
     params['n_path'] = n_path
     path_sigma = 2.0
+    os.makedirs('results/saves/', exist_ok=True)
     file_name_3gpp = 'results/saves/saved_data_ant=' + str(n_antennas) + '_model=' + str(params['model_type']) + \
                      '_paths=' + str(params['n_path']) + '_ntrain=' + str(n_train_ch) + '_nchan=' + \
                      str(n_channels) + '.npy'
@@ -311,6 +312,7 @@ if __name__ == "__main__":
     mse_list = [list(i) for i in zip(*mse_list)]
     rate_list = [list(i) for i in zip(*rate_list)]
     print(mse_list)
+    os.makedirs(f'results/{params["model_type"]}/', exist_ok=True)
     file_name = f'./results/' + params['model_type'] + '/' + date_time + '_ant=' + str(n_antennas) + \
                 '_path=' + str(n_path) + '_ntrain=' + str(n_train_ch) + '_comp=' + str(n_components) + \
                 '_pilots=' + str(n_pilots) + '_bits=' + str(n_bits) + '_0mean=' + str(params['zero_mean_gmm']) + \

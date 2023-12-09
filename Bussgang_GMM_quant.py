@@ -105,6 +105,7 @@ if __name__ == "__main__":
     cov = cov / n_train_ch
 
     # train or load GMM and evaluate MSE and rate
+    os.makedirs(f'results/saves/', exist_ok=True)
     file_name_gmm = f'results/saves/trained_gmm_ant={n_antennas}_comp={n_components}_model={params["model_type"]}' \
                     f'_paths={params["n_path"]}_ntrain={n_train_ch}_covtype={cov_type}_' \
                     f'zeromean={params["zero_mean_gmm"]}_bits={n_bits}_quant={quantizer_type}_snr={snr_train}.sav'
@@ -155,6 +156,7 @@ if __name__ == "__main__":
     # print and save results
     mse_list = [list(i) for i in zip(*mse_list)]
     print(mse_list)
+    os.makedirs(f'results/{params["model_type"]}/', exist_ok=True)
     file_name = f'./results/' + params['model_type'] + '/' + date_time + '_ant=' + str(n_antennas) + \
                 '_path=' + str(n_path) + '_ntr=' + str(n_train_ch //1_000) + 'k_comp=' + str(n_components) + \
                 '_pilots=' + str(n_pilots) + '_bits=' + str(n_bits) + '_0mean=' + str(params['zero_mean_gmm']) + \

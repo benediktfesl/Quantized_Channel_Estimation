@@ -1,3 +1,4 @@
+import os
 import numpy as np
 from modules import utils as ut
 from scipy.special import erfinv, erf
@@ -76,6 +77,7 @@ if __name__ == "__main__":
     mse_list.append(['sampcov_quant'])
     mse_list.append(['sampcov_unquant'])
     mse_list.append(['Cov_est'])
+    os.makedirs(f'results/cov_est_quant/', exist_ok=True)
     for n_data in n_data_list:
         _, toep = channel_scm.generate_channel(mc_runs, 1, n_dim, rng)
         mse_both = 0.0
