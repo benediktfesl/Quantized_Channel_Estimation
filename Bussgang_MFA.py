@@ -27,9 +27,9 @@ if __name__ == "__main__":
     n_antennas = 64  # BS antennas
     n_components = 64  # MFA components
     n_summands_or_proba = 'all'  # Number of MFA LMMSE that should be evaluated
-    n_path = 1  # Number of propagation clusters of the 3GPP channel model
+    n_path = 3  # Number of propagation clusters of the 3GPP channel model
     n_pilots = 1  # Number of pilots
-    n_bits = 1  # Number of quantization bits
+    n_bits = 2  # Number of quantization bits
     pilot_type = 'angle_amp'  # Pilot type {'angle', 'angle_amp', 'rand', 'ones'}
     quantizer_type = 'uniform'  # Quantizer type {'uniform', 'lloyd'}
     snrs = [-10, -5, 0, 5, 10, 15, 20]  # SNR range to be evaluated
@@ -132,6 +132,7 @@ if __name__ == "__main__":
             verbose=False,
         )
         mfa_est.fit(channels_train, params['zero_mean_mfa'])
+        joblib.dump(mfa_est, filename=file_name_mfa)
         print('done.')
 
     params['n_summands_or_proba'] = n_summands_or_proba
