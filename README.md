@@ -52,27 +52,27 @@ The following covariance structures are supported for the GMM variant:
 
 ## Related Works
 
-  - M. Koller, B. Fesl, N. Turan, and W. Utschick, “An Asymptotically MSE-Optimal Estimator Based on Gaussian Mixture Models,” IEEE Trans. Signal Process., vol. 70, pp. 4109–4123, 2022. <br>
+  - M. Koller, B. Fesl, N. Turan, and W. Utschick, “An Asymptotically MSE-Optimal Estimator Based on Gaussian Mixture Models,” *IEEE Transactions on Signal Processing*, vol. 70, pp. 4109–4123, 2022. <br>
   https://ieeexplore.ieee.org/abstract/document/9842343
-  - N. Turan, B. Fesl, M. Grundei, M. Koller, and W. Utschick, “Evaluation of a Gaussian Mixture Model-based Channel Estimator using Measurement Data,” in Int. Symp. Wireless Commun. Syst. (ISWCS), 2022. <br>
+  - N. Turan, B. Fesl, M. Grundei, M. Koller, and W. Utschick, “Evaluation of a Gaussian Mixture Model-based Channel Estimator using Measurement Data,” in *International Symposium on Wireless Communication Systems (ISWCS)*, 2022. <br>
   https://ieeexplore.ieee.org/abstract/document/9940363
-  - B. Fesl, M. Joham, S. Hu, M. Koller, N. Turan, and W. Utschick, “Channel Estimation based on Gaussian Mixture Models with Structured Covariances,” in 56th Asilomar Conf. Signals, Syst., Comput., 2022, pp. 533–537. <br>
+  - B. Fesl, M. Joham, S. Hu, M. Koller, N. Turan, and W. Utschick, “Channel Estimation based on Gaussian Mixture Models with Structured Covariances,” in *56th Asilomar Conference on Signals, Systems, and Computers*, 2022, pp. 533–537. <br>
   https://ieeexplore.ieee.org/abstract/document/10051921
-  - B. Fesl, N. Turan, M. Joham, and W. Utschick, “Learning a Gaussian Mixture Model from Imperfect Training Data for Robust Channel Estimation,” IEEE Wireless Commun. Lett., 2023. <br>
+  - B. Fesl, N. Turan, M. Joham, and W. Utschick, “Learning a Gaussian Mixture Model from Imperfect Training Data for Robust Channel Estimation,” *IEEE Wireless Communication Letters*, 2023. <br>
   https://ieeexplore.ieee.org/abstract/document/10078293
-  - M. Koller, B. Fesl, N. Turan and W. Utschick, "An Asymptotically Optimal Approximation of the Conditional Mean Channel Estimator Based on Gaussian Mixture Models," IEEE Int. Conf. Acoust., Speech, Signal Process. (ICASSP), 2022, pp. 5268-5272. <br>
+  - M. Koller, B. Fesl, N. Turan and W. Utschick, "An Asymptotically Optimal Approximation of the Conditional Mean Channel Estimator Based on Gaussian Mixture Models," *IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP)*, 2022, pp. 5268-5272. <br>
   https://ieeexplore.ieee.org/abstract/document/9747226
-  - B. Fesl, A. Faika, N. Turan, M. Joham, and W. Utschick, “Channel Estimation with Reduced Phase Allocations in RIS-Aided Systems,” in IEEE 24th Int. Workshop Signal Process. Adv. Wireless Commun. (SPAWC), 2023, pp. 161-165. <br>
+  - B. Fesl, A. Faika, N. Turan, M. Joham, and W. Utschick, “Channel Estimation with Reduced Phase Allocations in RIS-Aided Systems,” in *IEEE 24th International Workshop on Signal Processing Advances in Wireless Communications (SPAWC)*, 2023, pp. 161-165. <br>
   https://ieeexplore.ieee.org/document/10304464
-  - N. Turan, B. Fesl, M. Koller, M. Joham, and W. Utschick, “A Versatile Low-Complexity Feedback Scheme for FDD Systems via Generative Modeling,” in IEEE Transactions on Wireless Communications, 2023. <br>
+  - N. Turan, B. Fesl, M. Koller, M. Joham, and W. Utschick, “A Versatile Low-Complexity Feedback Scheme for FDD Systems via Generative Modeling,” in *IEEE Transactions on Wireless Communications*, 2023. <br>
   https://ieeexplore.ieee.org/document/10318056
-  - N. Turan, B. Fesl, and W. Utschick, "Enhanced Low-Complexity FDD System Feedback with Variable Bit Lengths via Generative Modeling," in 57th Asilomar Conf. Signals, Syst., Comput., 2023. <br>
+  - N. Turan, B. Fesl, and W. Utschick, "Enhanced Low-Complexity FDD System Feedback with Variable Bit Lengths via Generative Modeling," in *57th Asilomar Conference on Signals, Systems, and Computers*, 2023. <br>
   https://arxiv.org/abs/2305.03427
-  - N. Turan, M. Koller, B. Fesl, S. Bazzi, W. Xu and W. Utschick, "GMM-based Codebook Construction and Feedback Encoding in FDD Systems,"in 56th Asilomar Conf. Signals, Syst., Comput., 2022, pp. 37-42. <br>
+  - N. Turan, M. Koller, B. Fesl, S. Bazzi, W. Xu and W. Utschick, "GMM-based Codebook Construction and Feedback Encoding in FDD Systems,"in *56th Asilomar Conference on Signals, Systems, and Computers*, 2022, pp. 37-42. <br>
   https://ieeexplore.ieee.org/abstract/document/10052020
   - M. Baur, B. Fesl, and W. Utschick, "Leveraging Variational Autoencoders for Parameterized MMSE Channel Estimation," 2023. <br>
   https://arxiv.org/abs/2307.05352
-  - M. Baur, B. Fesl, and W. Utschick, "Variational Autoencoder Leveraged MMSE Channel Estimation," in 56th Asilomar Conf. Signals, Syst., Comput., 2022, pp. 527-532. <br>
+  - M. Baur, B. Fesl, and W. Utschick, "Variational Autoencoder Leveraged MMSE Channel Estimation," in *56th Asilomar Conference on Signals, Systems, and Computers*, 2022, pp. 527-532. <br>
   https://ieeexplore.ieee.org/abstract/document/10051858
 
 ## Original License
