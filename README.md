@@ -1,8 +1,11 @@
 # Channel Estimation for Quantized Systems based on Conditionally Gaussian Latent Models
 
 Implementation of the Paper
-  - B. Fesl, N. Turan, B. Böck, and W. Utschick, "Channel Estimation for Quantized Systems based on Conditionally Gaussian Latent Models," in *IEEE Transactions on Signal Processing*, 2024. <br>
-  Link to paper: https://ieeexplore.ieee.org/abstract/document/10454252.
+>B. Fesl, N. Turan, B. Böck, and W. Utschick, "Channel Estimation for Quantized Systems based on Conditionally Gaussian Latent Models," in *IEEE Transactions on Signal Processing*, 2024. <br>
+
+Link to paper: https://ieeexplore.ieee.org/abstract/document/10454252.
+<br>
+ArXiv: https://arxiv.org/abs/2309.04014
 
 ## Abstract
 
