@@ -64,6 +64,7 @@ The following covariance structures are supported for the GMM variant:
 
 ## Related Works
 
+  - B. Fesl, “Generative Model-Aided Channel Estimation Design and Optimality Analysis,” *Ph.D. dissertation, Technical University of Munich*, 2025. <br> [[TUM](https://mediatum.ub.tum.de/?id=1748775)]<br>
   - M. Koller, B. Fesl, N. Turan, and W. Utschick, “An Asymptotically MSE-Optimal Estimator Based on Gaussian Mixture Models,” *IEEE Transactions on Signal Processing*, vol. 70, pp. 4109–4123, 2022. <br>
   [[IEEE](https://ieeexplore.ieee.org/abstract/document/9842343)] [[arXiv](https://arxiv.org/abs/2112.12499v2)]
   - N. Turan, B. Fesl, M. Grundei, M. Koller, and W. Utschick, “Evaluation of a Gaussian Mixture Model-based Channel Estimator using Measurement Data,” in *International Symposium on Wireless Communication Systems (ISWCS)*, 2022. <br>
