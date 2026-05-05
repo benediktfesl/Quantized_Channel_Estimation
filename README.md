@@ -1,11 +1,20 @@
 # Channel Estimation for Quantized Systems based on Conditionally Gaussian Latent Models
 
-Implementation of the Paper
+Implementation of the paper
 >B. Fesl, N. Turan, B. Böck, and W. Utschick, "Channel Estimation for Quantized Systems based on Conditionally Gaussian Latent Models," in *IEEE Transactions on Signal Processing*, 2024. <br>
 
-Link to paper: https://ieeexplore.ieee.org/abstract/document/10454252.
-<br>
-ArXiv: https://arxiv.org/abs/2309.04014
+[[IEEE](https://ieeexplore.ieee.org/abstract/document/10454252)] [[arXiv](https://arxiv.org/abs/2309.04014)]
+
+## Overview
+
+This repository contains implementations of channel estimators for coarsely quantized systems based on conditionally Gaussian latent generative models.
+
+The implemented variants include:
+
+- Bussgang-GMM
+- Bussgang-MFA
+- Bussgang-VAE
+- covariance recovery from quantized training data
 
 ## Abstract
 
@@ -34,112 +43,54 @@ as evidenced by significant improvements in mean square error (MSE) and achievab
 ## Possible GMM Covariance Structures
 
 The following covariance structures are supported for the GMM variant:
-  - 'full' (full covariance matrix with no structural constraints for each GMM component)
-  - 'circulant' (Circulant covariance matrix for each GMM component
-  - 'block-circulant' (Block-circulant covariance matrix with circulant blocks for each GMM component, use keyword 'blocks' in 'fit')
-  - 'toeplitz' (Toeplitz covariance matrix for each GMM component)
-  - 'block-toeplitz' (Block-Toeplitz covariance matrix with Toeplitz blocks for each GMM component, use keyword 'blocks' in 'fit')
+  - `full` (full covariance matrix with no structural constraints for each GMM component)
+  - `circulant` (Circulant covariance matrix for each GMM component)
+  - `block-circulant` (Block-circulant covariance matrix with circulant blocks for each GMM component, use keyword `blocks` in `fit`)
+  - `toeplitz` (Toeplitz covariance matrix for each GMM component)
+  - `block-toeplitz` (Block-Toeplitz covariance matrix with Toeplitz blocks for each GMM component, use keyword `blocks` in `fit`)
 
 ## Related Repositories
 
-  - Complex-valued implementation the expectation-maximization (EM) algorithm for Gaussian mixture models (GMMs): <br>
-  https://github.com/benediktfesl/GMM_cplx
-  - Complex-valued implementation the expectation-maximization (EM) algorithm for Mixtures of Factor Analyzers (MFAs): <br>
-  https://github.com/benediktfesl/MFA_cplx
+  - Complex-valued implementation of the expectation-maximization (EM) algorithm for Gaussian mixture models (GMMs): <br>
+  [[GitHub](https://github.com/benediktfesl/cplx-gmm)] [[PyPI](https://pypi.org/project/cplx-gmm/)]
+  - Complex-valued implementation of the expectation-maximization (EM) algorithm for Mixtures of Factor Analyzers (MFAs): <br>
+  [[GitHub](https://github.com/benediktfesl/cplx-mfa)]
   - Implementation of the GMM channel estimator for high-resolution systems: <br>
-  https://github.com/michael-koller-91/gmm-estimator
+  [[GitHub](https://github.com/michael-koller-91/gmm-estimator)]
   - Implementation of the MFA channel estimator for high-resolution systems: <br>
-  https://github.com/benediktfesl/MFA_estimator
+  [[GitHub](https://github.com/benediktfesl/MFA_estimator)]
   - Implementation of the VAE channel estimator for high-resolution systems: <br>
-  https://github.com/tum-msv/vae-estimator
+  [[GitHub](https://github.com/tum-msv/vae-estimator)]
 
 ## Related Works
 
   - M. Koller, B. Fesl, N. Turan, and W. Utschick, “An Asymptotically MSE-Optimal Estimator Based on Gaussian Mixture Models,” *IEEE Transactions on Signal Processing*, vol. 70, pp. 4109–4123, 2022. <br>
-  https://ieeexplore.ieee.org/abstract/document/9842343
+  [[IEEE](https://ieeexplore.ieee.org/abstract/document/9842343)] [[arXiv](https://arxiv.org/abs/2112.12499v2)]
   - N. Turan, B. Fesl, M. Grundei, M. Koller, and W. Utschick, “Evaluation of a Gaussian Mixture Model-based Channel Estimator using Measurement Data,” in *International Symposium on Wireless Communication Systems (ISWCS)*, 2022. <br>
-  https://ieeexplore.ieee.org/abstract/document/9940363
+  [[IEEE](https://ieeexplore.ieee.org/abstract/document/9940363)] [[arXiv](https://arxiv.org/abs/2207.14150)]
   - B. Fesl, M. Joham, S. Hu, M. Koller, N. Turan, and W. Utschick, “Channel Estimation based on Gaussian Mixture Models with Structured Covariances,” in *56th Asilomar Conference on Signals, Systems, and Computers*, 2022, pp. 533–537. <br>
-  https://ieeexplore.ieee.org/abstract/document/10051921
+  [[IEEE](https://ieeexplore.ieee.org/abstract/document/10051921)] [[arXiv](https://arxiv.org/abs/2205.03634)]
   - B. Fesl, N. Turan, M. Joham, and W. Utschick, “Learning a Gaussian Mixture Model from Imperfect Training Data for Robust Channel Estimation,” *IEEE Wireless Communication Letters*, 2023. <br>
-  https://ieeexplore.ieee.org/abstract/document/10078293
+  [[IEEE](https://ieeexplore.ieee.org/abstract/document/10078293)] [[arXiv](https://arxiv.org/abs/2301.06488)]
   - M. Koller, B. Fesl, N. Turan and W. Utschick, "An Asymptotically Optimal Approximation of the Conditional Mean Channel Estimator Based on Gaussian Mixture Models," *IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP)*, 2022, pp. 5268-5272. <br>
-  https://ieeexplore.ieee.org/abstract/document/9747226
+  [[IEEE](https://ieeexplore.ieee.org/abstract/document/9747226)] [[arXiv](https://arxiv.org/abs/2111.11064)]
   - B. Fesl, A. Faika, N. Turan, M. Joham, and W. Utschick, “Channel Estimation with Reduced Phase Allocations in RIS-Aided Systems,” in *IEEE 24th International Workshop on Signal Processing Advances in Wireless Communications (SPAWC)*, 2023, pp. 161-165. <br>
-  https://ieeexplore.ieee.org/document/10304464
+  [[IEEE](https://ieeexplore.ieee.org/document/10304464)] [[arXiv](https://arxiv.org/abs/2211.07552)]
   - N. Turan, B. Fesl, M. Koller, M. Joham, and W. Utschick, “A Versatile Low-Complexity Feedback Scheme for FDD Systems via Generative Modeling,” in *IEEE Transactions on Wireless Communications*, 2023. <br>
-  https://ieeexplore.ieee.org/document/10318056
+  [[IEEE](https://ieeexplore.ieee.org/document/10318056)] [[arXiv](https://arxiv.org/abs/2304.14373)]
   - N. Turan, B. Fesl, and W. Utschick, "Enhanced Low-Complexity FDD System Feedback with Variable Bit Lengths via Generative Modeling," in *57th Asilomar Conference on Signals, Systems, and Computers*, 2023. <br>
-  https://arxiv.org/abs/2305.03427
+    [[IEEE](https://ieeexplore.ieee.org/document/10477075)] [[arXiv](https://arxiv.org/abs/2305.03427)]
   - N. Turan, M. Koller, B. Fesl, S. Bazzi, W. Xu and W. Utschick, "GMM-based Codebook Construction and Feedback Encoding in FDD Systems,"in *56th Asilomar Conference on Signals, Systems, and Computers*, 2022, pp. 37-42. <br>
-  https://ieeexplore.ieee.org/abstract/document/10052020
-  - M. Baur, B. Fesl, and W. Utschick, "Leveraging Variational Autoencoders for Parameterized MMSE Channel Estimation," 2023. <br>
-  https://arxiv.org/abs/2307.05352
+  [[IEEE](https://ieeexplore.ieee.org/abstract/document/10052020)] [[arXiv](https://arxiv.org/abs/2205.12002)]
+  - M. Baur, B. Fesl, and W. Utschick, "Leveraging Variational Autoencoders for Parameterized MMSE Estimation," in *IEEE Transactions on Signal Processing*, vol. 72, pp. 3731-3744, 2024. <br>
+  [[IEEE](https://ieeexplore.ieee.org/document/10629241)] [[arXiv](https://arxiv.org/abs/2307.05352)]
   - M. Baur, B. Fesl, and W. Utschick, "Variational Autoencoder Leveraged MMSE Channel Estimation," in *56th Asilomar Conference on Signals, Systems, and Computers*, 2022, pp. 527-532. <br>
-  https://ieeexplore.ieee.org/abstract/document/10051858
+  [[IEEE](https://ieeexplore.ieee.org/abstract/document/10051858)] [[arXiv](https://arxiv.org/abs/2205.05345)]
 
-## Original License
-The original code from https://scikit-learn.org/stable/modules/mixture.html is covered by the following license:
+## License
 
-> BSD 3-Clause License
->
-> Copyright (c) 2007-2023 The scikit-learn developers.
-> All rights reserved.
->
-> Redistribution and use in source and binary forms, with or without
->modification, are permitted provided that the following conditions are met:
->
-> * Redistributions of source code must retain the above copyright notice, this
->  list of conditions and the following disclaimer.
->
-> * Redistributions in binary form must reproduce the above copyright notice,
->  this list of conditions and the following disclaimer in the documentation
->  and/or other materials provided with the distribution.
->
-> * Neither the name of the copyright holder nor the names of its
->  contributors may be used to endorse or promote products derived from
->  this software without specific prior written permission.
->
-> THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
-> AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
-> IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
-> DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
-> FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
-> DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
-> SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
-> CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
-> OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
-> OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
- 
-## Licence of Contributions
-The contributions and extensions are also covered by the BSD 3-Clause License:
+This repository is distributed under the BSD 3-Clause License.
 
-> BSD 3-Clause License
->
-> Copyright (c) 2023 Benedikt Fesl.
-> All rights reserved.
->
-> Redistribution and use in source and binary forms, with or without
->modification, are permitted provided that the following conditions are met:
->
-> * Redistributions of source code must retain the above copyright notice, this
->  list of conditions and the following disclaimer.
->
-> * Redistributions in binary form must reproduce the above copyright notice,
->  this list of conditions and the following disclaimer in the documentation
->  and/or other materials provided with the distribution.
->
-> * Neither the name of the copyright holder nor the names of its
->  contributors may be used to endorse or promote products derived from
->  this software without specific prior written permission.
->
-> THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
-> AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
-> IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
-> DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
-> FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
-> DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
-> SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
-> CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
-> OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
-> OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+Parts of the implementation are derived from scikit-learn's mixture module, which is also licensed under the BSD 3-Clause License.
+
+See [`LICENSE`](LICENSE) for details.
